@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+
+    <head>
+        <title>DCrawler</title>
+        <script src="jquery-3.1.1.js"></script>
+        <script src="popup.js"></script>
+        <script src="db.js"></script>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+
+    <body>  
+        <div id="setTable">
+            <table id="mtable">
+                <tr></tr>
+            </table>
+            <p>Enter name of row:</p>
+            <input id="row" /><button id="addrow">Insert Row</button>
+        </div>
+        <div id="xpathinfo">
+            <p>Enter xpath:</p>
+            <input type="text" id="xpath">
+            <button id="submit">SUBMIT</button>
+        </div>
+        <div id="dbresult">
+            <p>Enter name of table for DB:</p>
+            <input id="nameOfTable" />
+            <button id="commitToDB">Commit to DB</button>
+            <p>Execute SQL statements:</p>
+            <input id="dbstatement" />
+            <button id="addstatement">SQL</button>
+
+            <h3 id="status"></h3>
+            <h5 id="result"></h5>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Notebook</title>
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+	<link rel="stylesheet" type="text/css" href="client/css/default.css">
+	<script type="text/javascript" src="client/js/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="client/js/jquery-rest.js"></script>
+	<script type="text/javascript" src="client/js/client-render.js"></script>
+	<script type="text/javascript" src="client/js/client.js"></script>
+</head>
+<body>
+	<table class='layout'>
+		
+		<tr>
+			<td class='panel'>
+			<h1>Students</h1>
+			<div id='students'></div>
+			<p>
+				<a href='#' class='add_icon student-add'>Add new student</a>
+				<a href='#' class='refresh_icon students-refresh'>Refresh</a>
+			</p>
+			<div id='students-messages'></div>
+			</td>
+			<td class='panel'>
+				<div id='student-edit'></div>
+				<div id='student-messages'></div>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class='panel'>
+				<h1>Notes</h1>
+				<div id='notes'>
+					<p class='info_icon'>Click a student to view its notes.</p>
+				</div>
+				<div id='notes-messages'></div>
+			</td>
+			<td class='panel'>
+				<div id='note-edit'></div>
+				<div id='note-messages'></div>
+				<div id='students_bySB'></div>
+			</td>
+		</tr>
+		
+	</table>
+
+</body>
+</html>
